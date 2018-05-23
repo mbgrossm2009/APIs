@@ -51,6 +51,6 @@ end
   end
 
   def find_todo_list
-    @list = TodoList.find(params[:todo_list_id])
+    @list = current_user.TodoList.find(params[:todo_list_id])
   end
 end
