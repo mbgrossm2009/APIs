@@ -1,5 +1,4 @@
-class Api::TodoListsController < ApplicationController
-  skip_before_filter :verify_authenticity_token
+class Api::TodoListsController < Api::ApiController
   def index
     render json: TodoList.all
   end

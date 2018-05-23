@@ -1,6 +1,5 @@
-class Api::TodoItemsController < ApplicationController
-  skip_before_filter :verify_authenticity_token
-  before_filter :find_todo_list
+class Api::TodoItemsController < Api::ApiController
+    before_filter :find_todo_list
 
 
   def create
